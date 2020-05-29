@@ -1,4 +1,7 @@
 # Cs50x-2020
+
+https://cs50.harvard.edu/x/2020/
+
 **Cs50x year 2020 less comfortable problems**
 
 Here are the codes for some of the problems viewed during the mentioned course. It is worth mentioning that less comfortable versions where realized.
