@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <header class="alert alert-primary border text-center" role="alert">
+        {{ message }}
+    </header>
+        {% endif %}
+        {% endwith %}
+
+        {% block main %}
+    <div class="form-group" style='overflow: hidden;'>
+            <p><img src="static/david.jpg" alt='Personal photo'style="width:200px; height:300px;
+                border-radius:50%" class="division">
+                My name is David Serna Gutiérrez. I'm from Medellín-Colombia.I was born June 25th, 1994 in the same city.
+                Recently graduated from Forest Engineering at Univesidad Nacional de Colombia-Medellín. <br>
+                I love landscapes, sports and mindfulness. I feel some kind of passion to
+                the plants and animals, specially birds. <br> <br>
+                This was a short review of my life. <br><br>
+                Enjoy the rest of my web page!!!
+                </p>
+    </div>
+    <div class="form-group">
+        <p>
+            Bienvenido al dibujo asistido por canvas.<br>Por favor escoja la cantidad de líneas:
+            <input type="text" id = "texto_lineas" />
+            <input type="button" value = "Enviar" id = "boton" />
+        </p>
+
+        <canvas width = "300" height = "300" id = "dibujo_click"></canvas>
+
+        <script src = {{ url_for('static', filename='dibujo.js') }}> </script>
+    </div>
+
+{% endblock %}

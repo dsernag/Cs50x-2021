@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>ABOUT MY HOBBIES</title>
+    </head>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <body>    
+        <header>
+            <h1 style='font-size: 80px;'>ABOUT MY HOBBIES</h1>
+        </header>
+        <nav>
+            <table style="border: 4px solid white; padding: 6px;"
+            align="center">
+                <tr>
+                    <td class='tabledata'><a href='index.html'class='colortd'>HOMEPAGE</a></td>
+                    <td class='tabledata'><a href='me.html'class='colortd'>ABOUT ME</a></td>
+                    <td class='tabledata'><a href='hobbies.html'class='colortd'>ABOUT MY HOBBIES</a></td>
+                    <td class='tabledata'><a href='friends.html'class='colortd'>ABOUT MY FRIENDS</a></td>
+                    <td class='tabledata'><a href='travels.html'class='colortd'>ABOUT MY TRAVELS</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section style='overflow: hidden;'>
+            <div class id="espacio">
+            </div> 
+            <div>
+                My principal hobbies are: <br><br>
+                <ul>
+                    <li><button id="ride" class='buttons'>Ride bicicle</button></li>
+                    <br>
+                    <li><button id="pictures" class='buttons'>Take pictures</button></li>
+                    <br>
+                    <li><button id="cali" class='buttons'>Practice calistenics</button></li>
+                    <br>
+                    <li><button id="books" class='buttons'>Reading Books</button></li>
+                    <br>
+                </ul>
+            </div>           
+        </section>       
+    </body>
+    <script>
+        let espacio = document.querySelector('#espacio');
+        document.querySelector('#ride').onclick = function() {
+            espacio.innerHTML = "<img src=\'hobbies/bici.jpg\' width=\'40%\' style=\'float:right\'>";
+        }
+        document.querySelector('#pictures').onclick = function() {
+            espacio.innerHTML = "<img src=\'hobbies/pictures.jpg\' width=\'40%\' style=\'float:right\'>";
+        }
+        document.querySelector('#cali').onclick = function() {
+            espacio.innerHTML = "<img src=\'hobbies/cali.jpg\' width=\'40%\' style=\'float:right\'>";
+        }
+        document.querySelector('#books').onclick = function() {
+            espacio.innerHTML = "<img src=\'hobbies/books.jpg\' width=\'40%\' style=\'float:right\'>";
+        }
+    </script>
+    <aside>
+        <p>Here you can use Google search:</p>        
+        <form action='https://www.google.com/search' method="GET">
+            <img src='google.png' alt='Google Button'
+                style="width: 30px; height: 30px;">
+            <input name='q' type='text'>
+            <input type="submit" value="Search">
+            
+        </form>
+    </aside>
+    <footer>
+        ®David Serna Website Design
+    </footer>
+</html>

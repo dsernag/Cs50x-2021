@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3g1xEXZp-gDV1P9jIKxM4RVwnSqDrt7P2D0kUGWJU-P49EXBs6TnTGUgkrroDzYIx1MHnsOmHJnPmV5Rn_7BXgKYw66c6rOELautdXCA6X7QxUMiJPaMGiB-04AxI-OKeWKmvVJ2UHvkIchGWCoF9GcagqJJJ6x0MlN_0sIb_dneJQYfg3-LJt_qaIV--Cpm" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9pZGUtNzY1Y2I5NzM3ZTQ1NDE4Zjk0NWEzOWRiOWVlNmVjMDkuaWRlLmNzNTAuaW8vdmZzLzIvZW52aXJvbm1lbnQvMjAyMS93ZWVrMDgvbGFiOC9pbmRleC5odG1sP21ldGFkYXRhPXRydWU"/><script>
+
+            //Esperar que el contenido del DOM se cargue:
+            document.addEventListener('DOMContentLoaded', function(){
+                //Cuando la respuesta es correcta se debe poner verde:
+                let bueno = document.querySelector('.bueno');
+                bueno.addEventListener('click', function(){
+                    bueno.style.backgroundColor = 'green';
+                    document.querySelector('#feedback1').innerHTML = '¡¡¡CORRECTO!!!';
+                });
+
+                //Sí la respuesta es incorrecta debe colorear rojo:
+                let malo = document.querySelectorAll('.malo');
+                for (let i = 0; i < malo.length; i++){
+                    malo[i].addEventListener('click', function(){
+                        malo[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = '¡¡¡INCORRECTO!!!';
+                    });
+                }
+
+                //Checar el botón de check
+                document.querySelector('#check').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value.toLowerCase() === 'cristobal colon'){
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = '¡¡¡CORRECTO!!!';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = '¡¡¡INCORRECTO!!!';
+                    }
+                })
+                });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>¿Dónde nació Gabriel García Márquez?:</h3>
+
+                <button class="malo"> Argentina </button>
+                <button class="malo"> México </button>
+                <button class="malo"> Perú </button>
+                <button class="bueno"> Colombia </button>
+
+                <p id="feedback1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>¿Quién es considero el descubridor de América?</h3>
+
+                <input type="text"></input>
+                <button id="check">Revisar!!!</button>
+                <p id="feedback2"></p>
+            </div>
+
+        </div>
+    </body>
+</html>

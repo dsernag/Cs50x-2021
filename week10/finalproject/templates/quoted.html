@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Producto
+{% endblock %}
+
+{% block main %}
+    <div class="form-group">
+        <p class="pt-5"> Esta es la sudadera de color {{ codigo}} </p>
+        <p> <img src= {{ image_file }} alt='Personal photo'> </p>
+    </div>
+    <form action="/quote" method="get">
+        <button class="btn btn-primary" type="submit">Regresar</button>
+    </form>
+{% endblock %}

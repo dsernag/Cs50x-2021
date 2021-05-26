@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Porque el algoritmo es el más lento. Y sí solo tenemos los valores de tiempos, es evidente que el más lento es selection sort
+
+sort2 uses: Merge Sort
+
+How do you know?: Porque el algoritmo es el más lento. Y sí solo tenemos los valores de tiempos, este es el más rápido. Su promedio en tiempo es el mejor!!
+
+sort3 uses: Selection Sort
+
+How do you know?: Porque el algoritmo es el más lento. Y sí solo tenemos los valores de tiempos, es evidente que el más lento es Bubble Sort

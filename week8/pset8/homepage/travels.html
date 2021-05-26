@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>ABOUT MY TRAVELS</title>
+    </head>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    <body>
+    <body>
+        <header>
+            <h1 style='font-size: 80px;'>ABOUT MY TRAVELS</h1>
+        </header>
+        <nav>
+            <table style="border: 4px solid white; padding: 6px;"
+            align="center">
+                <tr>
+                    <td class='tabledata'><a href='index.html'class='colortd'>HOMEPAGE</a></td>
+                    <td class='tabledata'><a href='me.html'class='colortd'>ABOUT ME</a></td>
+                    <td class='tabledata'><a href='hobbies.html'class='colortd'>ABOUT MY HOBBIES</a></td>
+                    <td class='tabledata'><a href='friends.html'class='colortd'>ABOUT MY FRIENDS</a></td>
+                    <td class='tabledata'><a href='travels.html'class='colortd'>ABOUT MY TRAVELS</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+            <!-- Slideshow container -->
+            <div class='slideshow-container'>
+                <!-- Full-width images with number and caption text -->
+                <!--Image1-->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="trips/david_trip.jpg" style="width:100%">
+                    <div class="text">This is me and my bike</div>
+                </div>
+                <!--Image2-->
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="trips/moto.jpg" style="width:100%">
+                    <div class="text">My bike-Ecuador</div>
+                </div>
+                <!--Image3-->
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="trips/hamacas.jpg" style="width:100%">
+                    <div class="text">Hamocks in Amazonas River-Brazil</div>
+                </div>
+                <!--Image4-->
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="trips/mitaddelmundo.jpg" style="width:100%">
+                    <div class="text">Mitad del Mundo-Ecuador</div>
+                </div>
+                <!--Image5-->
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="trips/atardecer.jpg" style="width:100%">
+                    <div class="text">Sunset in El Huila</div>
+                </div>
+                <!--Image6-->
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="trips/banos.jpg" style="width:100%">
+                    <div class="text">Landscape in Baños de Agua Santa-Ecuador</div>
+                </div>
+                <!--Image7-->
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="trips/farallones.jpg" style="width:100%">
+                    <div class="text">Farallones de la Pintada-Antioquia</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        </section> 
+        <script src='slideshow.js'></script>      
+    </body>
+    <aside>
+        <p>Here you can use Google search:</p>        
+        <form action='https://www.google.com/search' method="GET">
+            <img src='google.png' alt='Google Button'
+                style="width: 30px; height: 30px;">
+            <input name='q' type='text'>
+            <input type="submit" value="Search">
+            
+        </form>
+    </aside>
+    <footer>
+        ®David Serna Website Design
+    </footer>
+</html>

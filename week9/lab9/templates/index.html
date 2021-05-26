@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=UOHHKa34GQz6MipJGbfhrqjVGikOrMZjbOpBz8HNcprOc9jIKCebxh_NHA9dMWklWvUtaI_GDinQrMEuWFlgEsUJv97ZqNzoE3502Aewts0R2loJCV0o5QVF37zyGhn8uEjS1101Ks02rMf8BBsOvKkB8OZ63sbYUJwmgIpmuBoC4_XtwX2ndr3rWQg21sxx" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9pZGUtNzY1Y2I5NzM3ZTQ1NDE4Zjk0NWEzOWRiOWVlNmVjMDkuaWRlLmNzNTAuaW8vdmZzLzIvZW52aXJvbm1lbnQvMjAyMS93ZWVrMDkvbGFiOS90ZW1wbGF0ZXMvaW5kZXguaHRtbD9tZXRhZGF0YT10cnVl"/></head>
+    <body>
+        <div class="jumbotron">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <form action="/" method="post">
+                    <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+                    <input autocomplete="off" autofocus name="month" placeholder="Month" type="Number" min="1" max="12">
+                    <input autocomplete="off" autofocus name="day" placeholder="Day" type="Number" min="1" max="31">
+                    <input type="submit" value="Add Birthday">
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for birthday in birthdays%}
+                            <tr>
+                                <td>{{ birthday.name }}</td>
+                                <td>{{ birthday.month }}/{{birthday.day}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

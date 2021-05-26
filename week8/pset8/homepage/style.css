@@ -1,0 +1,157 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+header 
+{
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 40%;
+    padding: 80px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+nav
+{
+    background-color:#65406a;
+    padding: 4px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+aside
+{
+    background:#65406a;
+    padding: 10px;
+    color: whitesmoke;
+    border: 2px double white; 
+}
+
+section
+{
+    background-color:#65406a;
+    padding: 4px;
+    font-size: 24px;
+    color: whitesmoke;
+    border: 2px double white;
+}
+
+footer 
+{
+    background-color: #777;
+    padding: 8px;
+    text-align: left;
+    color: white;
+    font-size: xx-small;
+    border: 2px solid black;
+}
+
+.tabledata
+{
+    border: 4px double white;
+    padding: 6px
+}
+
+.colortd
+{
+    color: red
+}
+
+.buttons
+{
+    background-color: darkgray;
+    color: darkred;
+}
+
+.division
+{
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin: 10px 10px
+}
+
+/* Slideshow */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>INDEX</title>
+    </head>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <body>    
+        <header>
+            <h1 style='font-size: 80px;'>HOMEPAGE</h1>
+        </header>
+        <nav>
+            <table style="border: 4px solid white; padding: 6px;" align="center">
+                <tr>
+                    <td class='tabledata'><a href='index.html'class='colortd'>HOMEPAGE</a></td>
+                    <td class='tabledata'><a href='me.html'class='colortd'>ABOUT ME</a></td>
+                    <td class='tabledata'><a href='hobbies.html'class='colortd'>ABOUT MY HOBBIES</a></td>
+                    <td class='tabledata'><a href='friends.html'class='colortd'>ABOUT MY FRIENDS</a></td>
+                    <td class='tabledata'><a href='travels.html'class='colortd'>ABOUT MY TRAVELS</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+            <div style='text-align: center;'>
+                <button class='buttons' id="hellobutton">SAY HELLO!</button>
+            </div>            
+            <p style='text-align: center;' id='welcome'>Hi! And Welcome to my website! First of all
+                I need that you click above in the button, to known who are you
+            </p>
+            <div id='second'style='text-align: center;'></div>
+        </section>       
+    </body>
+    <script>
+        document.querySelector('#hellobutton').onclick = function(){
+            let name = prompt('Please enter your name');
+
+            if (name === null || name === "")
+            {
+                alert('You must write your name')
+            }
+            else
+            {
+                document.querySelector('#welcome').innerHTML = 
+                "Hi! " + name + ", this is my webpage," +
+                " here you will find information about me, my hobbies, my friends and my travels.\n\n";
+                document.querySelector('#second').innerHTML = 
+                "Be free to navigate around it. Remember that always is availabe the menu buttons"               
+            }
+            return name; 
+        }
+    </script>
+    <aside>
+        <p>Here you can use Google search:</p>        
+        <form action='https://www.google.com/search' method="GET">
+            <img src='google.png' alt='Google Button'
+                style="width: 30px; height: 30px;">
+            <input name='q' type='text'>
+            <input type="submit" value="Search">
+            
+        </form>
+    </aside>
+    <footer>
+        ®David Serna Website Design
+    </footer>
+</html>

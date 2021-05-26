@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>ABOUT MY FRIENDS</title>
+    </head>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <body>
+        <header>
+            <h1 style='font-size: 80px;'>ABOUT MY FRIENDS</h1>
+        </header>
+        <nav>
+            <table style="border: 4px solid white; padding: 6px;"
+            align="center">
+                <tr>
+                    <td class='tabledata'><a href='index.html'class='colortd'>HOMEPAGE</a></td>
+                    <td class='tabledata'><a href='me.html'class='colortd'>ABOUT ME</a></td>
+                    <td class='tabledata'><a href='hobbies.html'class='colortd'>ABOUT MY HOBBIES</a></td>
+                    <td class='tabledata'><a href='friends.html'class='colortd'>ABOUT MY FRIENDS</a></td>
+                    <td class='tabledata'><a href='travels.html'class='colortd'>ABOUT MY TRAVELS</a></td>
+                </tr>
+            </table>
+        </nav>
+        <section style='overflow: hidden;'>
+            <div class id="espacio">
+            </div> 
+            <div>
+                <p style='text-align: left;'>Here is a list of my friends</p>
+                <p style='text-align: left;'>Please select one</p>
+            </div>
+            <div style= 'text-align: left;'>
+                <select>
+                    <option value="bedo">Camilo Bedoya</option>
+                    <option value="gomez">Keduin Gómez</option>
+                    <option value="gonzalez">Pablo González</option>
+                    <option value="hernandez">Carlos Hernández</option>
+                    <option value="jaramillo">Paola Jaramillo</option>
+                    <option value="vargas">Camilo Vargas</option>
+                </select>
+        <script>
+            let photo = document.querySelector('#espacio');
+
+            document.querySelector('select').addEventListener('change', function(event){
+                let nombre = this.value
+                photo.innerHTML = "<img src=\'friends/"+nombre+".jpg\' width=\'20%\' style=\'float:right\'>";
+            })
+               
+        </script>
+        </section>       
+    </body>
+    <aside>
+        <p>Here you can use Google search:</p>        
+        <form action='https://www.google.com/search' method="GET">
+            <img src='google.png' alt='Google Button'
+                style="width: 30px; height: 30px;">
+            <input name='q' type='text'>
+            <input type="submit" value="Search">
+            
+        </form>
+    </aside>
+    <footer>
+        ®David Serna Website Design
+    </footer>
+</html>
