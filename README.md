@@ -11,6 +11,6 @@ Actually I'm planning my final project based on an app web about phenological pa
 Thank you for checking this project.
 
 
-  **PS:** Keeping in mind the course's policy on **[Academic Honesty](https://cs50.harvard.edu/x/2020/syllabus/#academic-honesty)**
+**PS:** Keeping in mind the course's policy on **[Academic Honesty](https://cs50.harvard.edu/x/2020/syllabus/#academic-honesty)**
 
 
